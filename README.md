@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# 📝 Proyecto de Desarrollo Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio contiene un mini ejercicio Frontend desarrollado con **React**, que simula una aplicación de publicaciones tipo blog. El objetivo principal es practicar el manejo del estado, el consumo de APIs, y la autenticación de usuarios.
 
-## Available Scripts
+## 🚀 Funcionalidades
 
-In the project directory, you can run:
+- ✅ Autenticación de usuarios mediante **Firebase Authentication** (email y contraseña).
+- 📄 Listado de publicaciones obtenidas desde [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
+- ➕ Creación de nuevas publicaciones.
+- ✏️ Edición de publicaciones existentes.
+- 🗑️ Eliminación de publicaciones.
+- 🔄 Manejo completo del estado local para gestionar los datos.
 
-### `npm start`
+## 🛠️ Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [React](https://reactjs.org/)
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Firebase Authentication](https://firebase.google.com/products/auth)
+- [Material UI (MUI)](https://mui.com/)
+- [Node.js](https://nodejs.org/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ▶️ Cómo ejecutar el proyecto localmente
 
-### `npm test`
+### 1. Clonar el repositorio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/FacundoAcostaG/mini-proyecto-retoWinter.git
 
-### `npm run build`
+### 2. Instalar dependencias
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
+npm install firebase
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Crear un proyecto en Firebase
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ingresá a Firebase Console
+Creá un nuevo proyecto (o usá uno que ya tengas).
+Ir al proyecto y seleccioná Web App (</>).
+Copiá la configuración que te da Firebase (la usaremos en el siguiente paso).
 
-### `npm run eject`
+### 4. Configurar Firebase en el proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Abrí el archivo firebase.js y reemplazá los valores del objeto firebaseConfig con los datos de tu propio proyecto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 5. Habilitar autenticación por correo en Firebase
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dentro de tu proyecto de Firebase, andá a la sección Authentication.
+Hacé clic en “Método de inicio de sesión”.
+Activá Correo electrónico y contraseña.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 6. Ejecutar el proyecto
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm run dev
